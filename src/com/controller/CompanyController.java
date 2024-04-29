@@ -58,7 +58,7 @@ public class CompanyController {
 			System.out.println("Enter posted date");
 			String date=sc.nextLine();
 			
-			JobListing jobListing= new JobListing(jobid,companyid,location,salary,type,date);
+			JobListing jobListing= new JobListing(jobid,companyid,title,description,location,salary,type,date);
 			
 			try {
 				int status=companyService.insert(jobListing);
